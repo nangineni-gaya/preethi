@@ -1,0 +1,53 @@
+import random
+import calendar
+from datetime import datetime
+def greet():
+    print("Hey! I am zeta2.0")
+def choice():
+    name=input("May I know your name")
+    print("Welcome!",name,"What can i do for you")
+    print("Here are some options for you")
+    print("1.Convert the Roman Number to Integer")
+    print("2.Find the calendar")
+    print("3.End this chat")
+    x=int(input("enter your choice"))
+    while(x!=3):
+        if(x==1):
+            rtoi()
+        elif x==2:
+            calen()
+        else:
+            print("Enter valid input")
+        x=int(input("enter your choice"))
+    if(x==3):
+        print("Bye!..Have a nice day")
+def calen():
+    print("If you want to know calendar of entire year enter 1....")
+    print("Otherwise only for month 3
+    enter 2...")
+    x=int(input())
+    if(x==2):
+        yy=int(input("Enter the year"))
+        mm=int(input("Enter the month"))
+        print(calendar.month(yy,mm))
+    elif x==1:
+        yy=int(input("enter the year"))
+        print(calendar.calendar(yy))
+    else:
+        print("Choose the appropriate option")
+def rtoi():
+    num=input("Enter roman number to be converted")
+    value={'M':1000,'D':500,'C':100,'L':50,'X':10,'V':5,'I':1}
+    p=0
+    ans=0
+    l=len(num)
+    for i in range(l-1,-1,-1):
+        if value[num[i]]>=p:
+            ans=ans+value[num[i]]
+        else:
+            ans=ans-value[num[i]]
+        p=value[num[i]]
+    print(ans)
+
+greet()
+choice()

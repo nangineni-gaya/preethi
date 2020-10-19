@@ -1,0 +1,27 @@
+                                Week-1 Chatbot Project
+
+ Name:V.Preethi
+
+ Description of the Chatbot:
+       Convert the Roman number to Integer and finding the calendar are the main 
+       Implementation of  our chatbot.
+
+ Working of the chatbot:
+      1.At first greet() function calls the function code.
+      2.After calling it greets the user by saying "Hey! I am zeta2.0"
+      3.Secondly it calls choice() function
+      4.In the choice() function there are multiple choices for the user needs towads the  calendar and Roman to Integer         conversion.
+      5.Firstly the user should enter his/her name
+      6.After it receives the name it says "Welcome! name what can I do for you" and gives two options for the user 
+         1.Convert  the Roman number  
+            to Integer.
+         2.Find the calendar
+     7. If the user selects the option 1 then user will get the conversation according to him by calling the rtio function
+     8.If the user selects the option 2 then there is again two options 
+        1.If the user wants the calendar
+             of the entire year
+        2.calender only for the month
+     9.If user wants to select option 1 user should enter 1 and the corresponding response will be given 
+     10.If the user wants to select the option 2 user should enter 2 and the corresponding response will be given
+     11.At last if the user wants to close then he/she can "End this chat" 
+          
